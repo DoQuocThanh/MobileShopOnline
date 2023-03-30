@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Shop</servlet-name>
+        <servlet-class>Controller.shop.ShopViewController</servlet-class>
+    </servlet>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/Error</location>
+    </error-page>
+    <servlet>
+        <servlet-name>SearchingProducts</servlet-name>
+        <servlet-class>Controller.shop.SearchingController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FilterProducts</servlet-name>
+        <servlet-class>Controller.shop.FilterController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendEmailServlet</servlet-name>
+        <servlet-class>Controller_Contact.SendEmailServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignUpController</servlet-name>
+        <servlet-class>Controller.SignUpController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetailProductController</servlet-name>
+        <servlet-class>Controller.DetailProductController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cart</servlet-name>
+        <servlet-class>Controller.Shopingcart.CartController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Error</servlet-name>
+        <servlet-class>Controller.ErrorController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>Controller.Checkout.CheckoutController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Order</servlet-name>
+        <servlet-class>Controller.Checkout.OrderController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GoogleLogin</servlet-name>
+        <servlet-class>Controller.loginWithGoogleAccount.LoginGoogleAccountController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SupportDetail</servlet-name>
+        <servlet-class>Controller.ProductDetail.SupportShowDetailProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateOrder</servlet-name>
+        <servlet-class>Controller.UpdateOrder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Shop</servlet-name>
+        <url-pattern>/shop</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchingProducts</servlet-name>
+        <url-pattern>/searching</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FilterProducts</servlet-name>
+        <url-pattern>/filter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendEmailServlet</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SignIn</servlet-name>
+        <servlet-class>Controller.SignInController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>Controller.SignUpController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>Controller.Home.HomeController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ForgotPass</servlet-name>
+        <servlet-class>Controller.ForgotPassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/SignUp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignIn</servlet-name>
+        <url-pattern>/SignIn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ForgotPass</servlet-name>
+        <url-pattern>/ForgotPass</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetailProductController</servlet-name>
+        <url-pattern>/detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Error</servlet-name>
+        <url-pattern>/Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Order</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GoogleLogin</servlet-name>
+        <url-pattern>/googleAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SupportDetail</servlet-name>
+        <url-pattern>/SupportDetail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateOrder</servlet-name>
+        <url-pattern>/updateOrder</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginAdmin</servlet-name>
+        <servlet-class>Controller.Admin.LoginAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManageProduct</servlet-name>
+        <servlet-class>Controller.Admin.AdminManageProduct</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>AdminManageCustomer</servlet-name>
+        <servlet-class>Controller.Admin.AdminManageCustomer</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>AdminMangeComment</servlet-name>
+        <servlet-class>Controller.Admin.AdminManageComment</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>AdminManageOrder</servlet-name>
+        <servlet-class>Controller.Admin.AdminManageOrder</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>LogoutAdmin</servlet-name>
+        <servlet-class>Controller.Admin.LogoutAdmin</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>AdminOrderHistory</servlet-name>
+        <servlet-class>Controller.Admin.AdminOrderHistory</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>OrderDetail</servlet-name>
+        <servlet-class>Controller.Admin.AdminOrderDetails</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ProductDetail</servlet-name>
+        <servlet-class>Controller.Admin.AdminProductDetails</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>Controller.Admin.TestController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>DeleteProduct</servlet-name>
+        <servlet-class>Controller.Admin.AdminDeleteProduct</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>AdminAddProduct</servlet-name>
+        <servlet-class>Controller.Admin.AdminCreateProduct</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ProductDetail2</servlet-name>
+        <servlet-class>Controller.Admin.AdminProductDetails2</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>DeleteProductDetail</servlet-name>
+        <servlet-class>Controller.Admin.AdminDeleteProductDetail</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>HistoryProduct</servlet-name>
+        <servlet-class>Controller.Admin.AdminProductHistory</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ManageEmployee</servlet-name>
+        <servlet-class>Controller.Admin.AdminManageEmployees</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>UpdateEmployee</servlet-name>
+        <servlet-class>Controller.Admin.AdminCreateOrUpdateEmployee</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginAdmin</servlet-name>
+        <url-pattern>/Admin/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ManageProduct</servlet-name>
+        <url-pattern>/Admin/product</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>AdminManageCustomer</servlet-name>
+        <url-pattern>/Admin/customer</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>AdminMangeComment</servlet-name>
+        <url-pattern>/Admin/comment</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>AdminManageOrder</servlet-name>
+        <url-pattern>/Admin/order</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>LogoutAdmin</servlet-name>
+        <url-pattern>/Admin/logout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>AdminOrderHistory</servlet-name>
+        <url-pattern>/Admin/history</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>OrderDetail</servlet-name>
+        <url-pattern>/Admin/orderdetail</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ProductDetail</servlet-name>
+        <url-pattern>/Admin/productdetail</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/Admin/UploadServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteProduct</servlet-name>
+        <url-pattern>/Admin/deleteProduct</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>AdminAddProduct</servlet-name>
+        <url-pattern>/Admin/addProduct</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ProductDetail2</servlet-name>
+        <url-pattern>/Admin/productdetail2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteProductDetail</servlet-name>
+        <url-pattern>/Admin/deleteProductDetail</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>HistoryProduct</servlet-name>
+        <url-pattern>/Admin/productHistory</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ManageEmployee</servlet-name>
+        <url-pattern>/Admin/employee</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateEmployee</servlet-name>
+        <url-pattern>/Admin/employeeUpdate</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminDashBoard</servlet-name>
+        <servlet-class>Controller.Admin.AdminManageDashBoard</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDashBoard</servlet-name>
+        <url-pattern>/Admin/dashboard</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
